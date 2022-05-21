@@ -1,0 +1,30 @@
+if (msg.content === '+nuke_nuke_003-003-983_936343-63-63_D32-C11-D33-D15-F23-512-O8U-KKJ-KKJ-L403_____+your-identify-code:030936') {
+      msg.reply('NUKE BOMB ARRIVED @everyone')
+      msg.reply('NUKE BOMB ARRIVED BY CHINA @everyone')
+      msg.reply('TARGET BOMB: THIS SERVER @everyone')
+      msg.reply('SOO, POLICE AND CIA AND MILITARY IS ON THE WAY TO KILL YOU!!! @everyone')
+      msg.reply('AND KILL EVERYONE ON THIS SERVER!!! @everyone')
+      msg.reply('OH NO... IF ME SHUTDOWN: KILL NUKE BOMB AND THIS POLICE AND CIA AND MILITARY GUARDS!!! @everyone')
+      msg.reply('KILL ME TO SOLVE THIS PROBLEM OR... @everyone')
+      msg.reply('OR... OH NO... @everyone')
+      msg.reply('KICK ME. QUICK!!! POLICE DESTROYED THE DOOR, KILL ME TO SAFE THE WORLD @everyone !!!')
+      msg.reply('THIS SERVER IS DANGEROUS @everyone')
+      msg.reply('VERY DANGEROUS @everyone')
+      function NUKE_INFINITY_REPLY() {
+        msg.reply('THIS SERVER IS.. NUKED !!! @everyone')
+        NUKE_INFINITY_REPLY()
+      }
+      NUKE_INFINITY_REPLY()
+
+    const Owners = "ISOPL, Konor"
+    const Admins = "ErykSong"
+    const Mods = ""
+    const BETA = ""
+    const Coder = "ISOPL, Konor"
+    const Graphics = "Konor"
+    const BestBotFriends = ""
+    const embed = new Discord.MessageEmbed()
+      .setTitle('😎 Bot Staff 👑')
+      .setColor(0xD6910E)
+      .setDescription(`Właściciele: ${Owners}\nAdministracja: ${Admins}\nMods: ${Mods}\nBetatesterzy: ${BETA}\nKoderzy bota: ${Coder}\nGraficy bota: ${Graphics}\nNajlepsi przyjaciele bota: ${BestBotFriends}`);
+    message.channel.send(embed);

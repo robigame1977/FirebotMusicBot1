@@ -1,0 +1,60 @@
+    if (!cmdName.cooldown)
+    
+    if (!cooldowns.has(cmdName)){
+        cooldowns.set(cmdName, new Collection())
+    }
+    if (!cmd) return
+
+    const current_time = Date.now()
+    const time_stamps = cooldowns.get(cmdName)
+    
+    if (!cmdName.cooldown) {
+        const cooldown_amount = '3000'
+
+        if (timestamps.has(msg.author.id)) {
+        const expirationTime = timestamps.get(msg.author.id) + cooldownAmount
+        if (now < expirationTime) {
+            const timeLeft = (expirationTime - now) / 1000
+            const embed = new MessageEmbed()
+            .setColor("#ff0000")
+            .setTitle("🕔 Cooldown")
+            .setDescription(`Prosimy poczekać ${timeLeft.toFixed(1,)} sekund by uruchomić ponownie komendę \`${cmdName}\``)
+            .setFooter(`FireBot v.${wersja}`)
+            return msg.reply(embed)
+        }
+     }
+
+     timestamps.set(author.id, now)
+     setTimeout(() => {
+        timestamps.delete(author.id)
+     }, cooldown_amount)
+        console.log("In loop")
+        try{
+            if (!cmdName) return
+            client.commands.get(cmdName).execute(client, message, cmdName, args, Discord)
+            console.log(`Executed ${cmdName}!`)
+        } catch (err){
+            message.reply("💔 | Wystąpił błąd krytyczny!")
+            message.author.send("Please send this report to main developer of firebot!")
+            message.author.send(`\`\`\`Command: ${cmdName}\nArgs: ${args}\nMessage: ${message}\nAuthor: ${message.author.tag}\nErr code: ${err}\`\`\``)
+            console.log(err)
+        }
+        return
+    }
+    console.log('After loop')
+    const cooldown_amount = (cmdName.cooldown) * 1000
+    
+    
+
+    if (time_stamps.has(message.author.id)){
+        const expiration_time = time_stamps.get(message.author.id) + cooldown_amount
+
+        if (current_time < expiration_time){
+            const time_left = (expiration_time - current_time) / 1000
+
+            return message.reply(`Prosimy poczekać ${time_left.toFixed(1)} sekund przed użyciem ${cmdName}`)
+        }
+    }
+
+    time_stamps.set(() => message.author.id, current_time)
+    setTimeout(() => time_stamps.delete(message.author.id), cooldown_amount)

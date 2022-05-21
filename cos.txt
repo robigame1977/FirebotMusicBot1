@@ -1,0 +1,1 @@
+Właściciele: ${Owners}\nAdministracja: ${Admins}\nMods: ${Mods}\nBetatesterzy: ${BETA}\nKoderzy bota: ${Coder}\nGraficy bota: ${Graphics}\nNajlepsi przyjaciele bota: ${BestBotFriends}
