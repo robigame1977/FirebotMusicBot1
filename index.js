@@ -1,17 +1,3 @@
-const prefix = "^"
-const Discord = require('discord.js')
-const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]});
-const { token } = require('./config.js')
-const bot_version = '0.3.4.1'
-
-// Command handler stuff
-client.commands = new Discord.Collection()
-client.events = new Discord.Collection()
-
-
-let handler = ['command_handler', 'event_handler'].forEach(handler =>{
-  require(`./handlers/${handler}`)(client, Discord)
-})
-
-
-client.login(token);
+version https://git-lfs.github.com/spec/v1
+oid sha256:b4475321f477cd8ba85a196ca35cecaa9b14a664eff84cae7716ebb3a465288b
+size 1010

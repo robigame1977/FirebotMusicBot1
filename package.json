@@ -1,31 +1,3 @@
-{
-  "name": "firebot",
-  "version": "1.0.2",
-  "description": "Discord Bot",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "nodemon": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/robigame1977/Firebot.git"
-  },
-  "author": "ISOPL",
-  "license": "ISC",
-  "dependencies": {
-    "avconv": "^3.1.0",
-    "chalk": "^4.1.2",
-    "discord.js": "^12.5.3",
-    "ffmpeg": "^0.0.4",
-    "ffmpeg-static": "^4.4.1",
-    "fs": "^0.0.1-security",
-    "github": "^14.0.0",
-    "ms": "^2.1.3",
-    "nodemon": "^2.0.15",
-    "opusscript": "^0.0.8",
-    "yt-search": "^2.10.3",
-    "ytdl-core": "^4.11.0"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:236faaad7a8b1a1922731e209058357d17bec5569a3c58fc8976b66cb40bf77b
+size 726

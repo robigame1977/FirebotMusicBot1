@@ -1,0 +1,16 @@
+FirebotMusicBot1 filter=lfs diff=lfs merge=lfs -text
+desktop.ini filter=lfs diff=lfs merge=lfs -text
+kopia[[:space:]]zapasowa[[:space:]]skryptów.log filter=lfs diff=lfs merge=lfs -text
+node_modules filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+config.js filter=lfs diff=lfs merge=lfs -text
+package.json filter=lfs diff=lfs merge=lfs -text
+Update.cmd filter=lfs diff=lfs merge=lfs -text
+package-lock.json filter=lfs diff=lfs merge=lfs -text
+index.js filter=lfs diff=lfs merge=lfs -text
+Procfile filter=lfs diff=lfs merge=lfs -text
+Run.bat filter=lfs diff=lfs merge=lfs -text
+commands filter=lfs diff=lfs merge=lfs -text
+cos.txt filter=lfs diff=lfs merge=lfs -text
+events filter=lfs diff=lfs merge=lfs -text
+handlers filter=lfs diff=lfs merge=lfs -text
